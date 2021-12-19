@@ -1,0 +1,104 @@
+.header-row-1 {
+  background-color: black;
+  color: gray;
+  height: 47px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.header-welcome {
+  float: left;
+  width: 362;
+  height: 14;
+  font-size: 14;
+  padding: 17px 0px 16px 30px;
+  font-family: "Open Sans", sans-serif;
+}
+.header-button {
+  color: gray;
+  float: right;
+  padding: 10px;
+  font-size: 14px;
+  padding: 17px 31px 16px 0px;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+.header-button:hover {
+  color: white;
+}
+.header-row-2 {
+  border-bottom: 1px solid black;
+  height: 77px;
+  padding: 18px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-logo {
+  float: left;
+  margin-left: 29px;
+  width: 201px;
+  height: 41px;
+  object-fit: fill;
+}
+.header-choice {
+  justify-content: center;
+  margin-top: 10px;
+}
+.header-choice a {
+  padding: 0px 20px;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header-choice a:hover {
+  color: plum;
+}
+.header-icon {
+  float: right;
+  width: 230px;
+  height: 41px;
+  padding-left: auto;
+  padding-right: 24px;
+  padding-top: 5px;
+}
+.header-icon a {
+  float: right;
+  color: black;
+  font-size: 30px;
+  padding: 0px 5px;
+}
+.header-icon a:hover {
+  color: plum;
+}
+#menu-bar {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .header-welcome {
+    display: none;
+  }
+  .header-choice a {
+    display: none;
+  }
+  #menu-bar {
+    display: block;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header-choice.responsive {
+    background-color: white;
+    height: 150px;
+  }
+  .header-choice.responsive #menu-bar {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header-choice.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
